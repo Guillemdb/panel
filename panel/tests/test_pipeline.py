@@ -13,7 +13,7 @@ from panel.tests.util import hv_available
 
 try:
     import holoviews as hv
-except:
+except Exception:
     hv = None
 
 if LooseVersion(param.__version__) < '1.8.2':
